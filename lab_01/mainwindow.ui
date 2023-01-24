@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1272</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ООП 3D Каркас</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>821</width>
+      <height>631</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionOpen">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>20</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Load File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Turn">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>560</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Turn</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_TurnX">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>520</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_TurnY">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>520</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_TurnZ">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>520</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TurnX">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>490</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ox:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TurnY">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>490</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>oy:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TurnZ">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>490</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>oz:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Scale">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>370</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Scale</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ScaleX">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ScaleY">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ScaleZ">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ScaleZ">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>300</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>kz:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ScaleY">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>300</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ky:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ScaleX">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>300</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>kx:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Move">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>180</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Move</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_MoveZ">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>140</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_MoveY">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>140</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_MoveX">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>140</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MoveY">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>110</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>dy:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MoveZ">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>110</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>dz:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MoveX">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>110</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>dx:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>80</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Move</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>270</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Scale</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>460</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Turn</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

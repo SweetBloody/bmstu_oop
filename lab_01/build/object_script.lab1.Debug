@@ -1,0 +1,12 @@
+debug/error.o
+debug/mainwindow.o
+debug/drawing.o
+debug/figure.o
+debug/graph.o
+debug/io.o
+debug/link.o
+debug/point.o
+debug/main.o
+debug/operations.o
+debug/task_manager.o
+debug/moc_mainwindow.o
